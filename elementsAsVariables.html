@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Challenge 1</title>
+    <title>Event Examples</title>
     <script>
-        /* Challenge 1: Create a variable called age and prompt the user to enter their age.
-        Then, create a popup for the user with their age and tell them they are too old for ice cream. */
-        function sayYourAge() {
-            let age = prompt('Please enter your age.');
-            alert (age + "?! You're way too old for ice cream!");
+
+        function hideImage(){
+            const image = document.getElementById("img1");
+            image.style.display = 'block';
         }
 
     </script>
@@ -18,10 +17,12 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <button class="btn btn-primary" onclick="sayYourAge()">My Button - Click to See What Happens!</button>
+            <button class="btn btn-success"  onclick="hideImage()">When you click me an image appears!</button>
+            <img src="img/stock.png" style="display:none;" id="img1" alt="Go Away"/>
         </div>
     </div>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
